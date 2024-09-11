@@ -14,3 +14,6 @@ values_dict = {'a':111, 'b':222, 'c':333}
 
 print_params(*values_list)
 print_params(**values_dict)
+
+values_list_2 = [54.32, 'Строка-3' ]
+print_params(*values_list_2,  44)
