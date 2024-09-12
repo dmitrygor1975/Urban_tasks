@@ -3,8 +3,8 @@
 def send_email (message, recipiant, *, sender = "university.help@gmail.com"):
 
     proverka_= "@" in sender and "@" in recipiant # проверка на @
-    proverka_sender = ".com" in sender or '.ru' in sender or '.net' in sender # проверка sender на окончания
-    proverka_recipiant = ".com"  in recipiant or '.ru'  in recipiant or '.net'  in recipiant  # проверка recipiant на окончания
+    proverka_sender = sender.endswith((".com", '.ru',  '.net')) # проверка sender на окончания
+    proverka_recipiant = recipiant.endswith((".com", '.ru',  '.net'))  # проверка recipiant на окончания
     proverka = proverka_ and proverka_sender and proverka_recipiant # итоговая проверка
 
     if proverka == False:
