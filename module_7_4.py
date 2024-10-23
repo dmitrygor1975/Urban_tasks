@@ -43,5 +43,5 @@ else:
     print(f'Результат битвы: {challenge_result}')
 
 
-T=round(((team1_time+team2_time)/tasks_total),1)
-print(f'Сегодня было решено {tasks_total} задач, в среднем по {T} секунды на задачу!')
+#T=round(((team1_time+team2_time)/tasks_total),1)
+print(f'Сегодня было решено {tasks_total} задач, в среднем по {round(((team1_time+team2_time)/tasks_total),1)} секунды на задачу!')
