@@ -5,8 +5,8 @@ def add_everything_up(a,b):
         res = round(a + b,3)
         return (res)
     except TypeError:
-        if isinstance(a, str) or isinstance(b, str):
-            return f'{a}{b}'
+        #if isinstance(a, str) or isinstance(b, str):
+        return f'{a}{b}'
 
 
 print(add_everything_up(123.456, 'строка'))
