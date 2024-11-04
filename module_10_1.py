@@ -32,7 +32,7 @@ func_4 = write_words
 
 start_time_2 = time()
 
-thread1 = threading.Thread (target=func_1 (30,'example6.txt'))
+thread1 = threading.Thread (target=func_1 (10,'example5.txt'))
 thread1.start()
 thread1.join()
 
