@@ -46,8 +46,7 @@ class Cafe:
                         self.tables[i].guest = guest # посадили Гостя за свободный по порядку стол
                         print (f'{self.tables[i].guest.name} сел(-а) за стол номер {self.tables[i].number}' )
                         #print(f'текущий поток в Arrival {threading.current_thread()}')
-                        guest.start() #
-                        guest.join()
+                        guest.start()
                         free_tables -= 1
                         break
 
